@@ -1,0 +1,462 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 248, 226);
+}
+
+.footer{
+    background: black;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+video{
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(238, 220, 170)
+}
+
+.brandImage{
+    width: 15%;
+    padding: 0px 10px;
+    height: auto;
+    align-self: center;
+}
+
+.topNav{
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    /* background: black; */
+}
+
+.topNav a{
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: 600;
+    padding: 20px 20px;
+    color: black;
+}
+
+.active{
+    text-transform: uppercase;
+    font-weight: 800 !important;
+}
+
+.active, a:hover{
+    color: orange !important;
+}
+
+.homeVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 8pt;
+    font-weight: 600;
+    margin: 10px;
+    padding: 15px 0px;
+    /* border-style: dashed;
+    /* border-color: white; */
+    border-radius: 10px;
+}
+
+.heroContainer{
+    margin: 0px;
+}
+
+button, input[type=submit]{
+    background-color: orange;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 40px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 50px;
+    margin-bottom: 50px;
+}
+
+.homeContainer .homeTitle{
+    font-size: 25pt;
+    font-weight: 600;
+    color: orange;
+    margin: 50px 0px;
+}
+
+.homeContainer img{
+    width: 50%;
+    height: auto;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event div span, .promotions div span, .news div span{
+    margin: 10px;
+    font-size: 12pt;
+}
+
+.promotions, .news, .event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.336);
+}
+
+.promotions .promoCarousel, .news .newsCarousel, .event .eventCarousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.promotions .promoItem, .news .newsItem, .event .eventItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotions img, .news img, .event img{
+    border-radius: 10px;
+}
+
+/* Menu Page */
+/* .menuTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.menuTitle span{
+    color: orange;
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+.menuBurger{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 25px 25px;
+    margin-bottom: 75px;
+}
+
+.menuBurger .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14pt;
+    margin: 15px;
+    width: 30%;
+}
+
+.menuBurger .menu span{
+    text-align: center;
+}
+
+.menuBurger a img{
+    width: 50%;
+    height: auto;
+    align-self: center;
+} */
+
+/* Order Page */
+/* .orderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 25px;
+}
+
+.orderForm input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+} */
+
+/* Coming Soon Page */
+.comingSoonContainer{
+    display: flex;
+    flex-direction: column;
+    /* background: rgb(201, 130, 0); */
+    color: black;
+}
+
+.comingSoonContainer .comingSoonVideo{
+    display: flex;
+    background-color: black !important;
+    padding: 20px 0px;
+}
+
+.comingSoonText{
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.comingSoonImageCollection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.comingSoonImageCollection img{
+    width: 30%;
+    height: auto;
+}
+
+.comingSoonContainer p{
+    font-size: 14pt;  
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 24pt;
+    text-align: center;
+    margin: 0px 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 20px 50px;
+}
+
+/* Abous Us Page */
+/* .aboutUsTitle{
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.aboutUsVideo{
+    display: flex;
+    background: black;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.aboutUs p{
+    font-size: 12pt;  
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 24pt;
+    text-align: center;
+    margin: 0 200px;
+    padding: 20px 50px;
+}
+
+.aboutUs .brandName{
+    margin: 0;
+    color: orange;
+}
+
+.brandFooter{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.brandFooterImage{
+    width: 10%;
+    height: auto;
+} */
+
+/* @media screen and (max-width: 1024px){
+    .menuBurger .menu{
+        font-size: 12pt;
+    }
+} */
+
+@media screen and (max-width: 420px) {
+    video{
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brandImage{
+        width: 20%;
+        padding: 10px 0px;
+    }
+    
+    .topNav{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .topNav a{
+        padding: 8px 10px;
+    }
+
+    .homeContainer img{
+        width: 100%;
+    }
+
+    .promotions, .news{
+        flex-direction: column;
+    }
+    
+    .promotions div, .news div{
+        margin: 20px 0px;
+    }
+
+    /* .menuBurger .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 12pt;
+        margin: 15px;
+        width: 100%;
+    }
+    
+    .orderContainer{
+        flex-direction: column;
+    }
+
+    .orderContainer img{
+        justify-self: center;
+        width: 50%;
+        margin: 25px 0px;
+    }
+    
+    .orderForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 25px;
+        margin-bottom: 100px;
+    }
+    
+    .orderForm input{
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .orderForm label{
+        font-size: 10pt;
+    } */
+
+    .comingSoonContainer .comingSoonVideo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .comingSoonText{
+        font-size: 7pt;
+        margin: 10px 20px;
+    }
+    
+    .comingSoonImageCollection{
+        flex-direction: column;
+    }
+    
+    .comingSoonImageCollection img{
+        width: 80%;
+    }
+    
+    .comingSoonContainer p{
+        font-size: 10pt;  
+        margin: 40px 40px;
+        padding: 0;
+    }
+
+    /* .aboutUsTitle{
+        text-align: center;
+        font-size: 18pt;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: orange;
+    }
+    
+    .aboutUs p{
+        font-size: 10pt;  
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        line-height: 24pt;
+        text-align: center;
+        margin: 0 10px;
+    }
+    
+    .brandFooterImage{
+        width: 30%;
+        height: auto;
+    } */
+
+    .footer{
+        font-size: 8pt;
+    }
+}
