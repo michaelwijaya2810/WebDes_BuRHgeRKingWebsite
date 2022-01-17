@@ -123,14 +123,14 @@ button, input[type=submit]{
     font-size: 12pt;
 }
 
-.sliderOuter .slide img{
-    border-radius: 10px;
-}
-
 .sliderOuter{
-    width: 6000px;
+    width: 720px;
     height: 400px;
     overflow: hidden;
+}
+
+.sliderOuter .slide img{
+    border-radius: 10px;
 }
 
 .sliderOuter .sliderInner{
