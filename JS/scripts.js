@@ -58,7 +58,10 @@ function orderValidation()
   else
   {
     alert("order success");
-    location.href = "Home.html";    
+    location.href = "home.html";    
     return false;
   }
 }
+
+// jQuery Image Slider
+

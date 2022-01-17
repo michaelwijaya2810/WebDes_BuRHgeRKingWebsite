@@ -42,7 +42,7 @@ video{
 }
 
 .topNav{
-    display: flex;
+    /* display: flex; */
     justify-content: right;
     padding: 0;
     /* background: black; */
@@ -167,6 +167,42 @@ button, input[type=submit]{
     border-radius: 10px;
 }
 
+#slider{
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides{
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+/* #slider .slides .eventItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .eventItem img{
+    border-radius: 10px;
+}
+
+.eventItem span{
+    margin: 10px;
+} */
+
+#slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
 /* Menu Page */
 .menuTitle{
     display: flex;
@@ -236,34 +272,72 @@ button, input[type=submit]{
     margin: 5px;
 }
 
+.overlay
+{
+    display: none;
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+.xbutton
+{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.box-shadow
+{
+    box-shadow: 10px 10px 10px 10px rgb(78, 78, 78);
+}
+
+.bodyoverlay
+{
+    position: fixed;
+    /* background-color: black; */
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
 /* Coming Soon Page */
 .comingSoonContainer{
     display: flex;
     flex-direction: column;
     /* background-color: black !important; */
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
 }
 
-.comingSoonImg{
+.comingSoonVideo{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
-    margin: 0px 10px;
+    margin: 10px 10px;
     padding: 15px 0px;
 }
 
-.comingSoonImg img{
+/* .comingSoonVideo img{
     width: 60%;
     height: auto;
-}
+} */
 
-.comingSoonText{
+.comingSoonText h1{
     text-align: center;
-    font-size: 10pt;
+    font-size: 26pt;
     font-weight: 600;
-    margin: 20px 0px;
+    margin: 35px 0px;
 }
 
 .comingSoonImageCollection{
@@ -290,6 +364,12 @@ button, input[type=submit]{
     padding: 20px 50px;
 }
 
+#burgerCanvas{
+    border: 1px solid;
+    width: 100%;
+    height: 500px;
+}
+
 /* Abous Us Page */
 .aboutUsTitle{
     text-align: center;
@@ -299,9 +379,18 @@ button, input[type=submit]{
     color: orange;
 }
 
-.aboutUsVideo{
+.aboutUsImg{
     display: flex;
     background: black;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsImg img{
+    width: 60%;
+    height: auto;
 }
 
 .aboutUs{
@@ -338,8 +427,29 @@ button, input[type=submit]{
 } 
 
 @media screen and (max-width: 1024px){
+    .heroContainer h1{
+        font-size: 24pt;
+    }
+
     .menuBurger .menu{
         font-size: 12pt;
+    }
+
+    .orderForm{
+        margin: 25px;
+    }
+
+    .comingSoonText h1{
+        font-size: 18pt;
+    }
+
+    .comingSoonImageCollection img{
+        width: 20%;
+    }
+
+    .comingSoonContainer p{
+        font-size: 12pt;
+        margin: 0px 50px;
     }
 }
 
@@ -418,7 +528,7 @@ button, input[type=submit]{
         font-size: 10pt;
     } 
 
-    .comingSoonContainer .comingSoonVideo{
+    .comingSoonContainer .comingSoonImg{
         flex-direction: column;
         justify-content: center;
         align-items: center;
