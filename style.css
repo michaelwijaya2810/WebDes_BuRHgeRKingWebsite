@@ -118,62 +118,22 @@ button, input[type=submit]{
     height: auto;
 }
 
-.event{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.event div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.event div span, .promotions div span, .news div span{
+.homeContainer span{
     margin: 10px;
     font-size: 12pt;
 }
 
-.promotions, .news, .event{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 50px 0px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.336);
-}
-
-.promotions .promoCarousel, .news .newsCarousel, .event .eventCarousel{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.promotions .promoItem, .news .newsItem, .event .eventItem{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.promotions img, .news img, .event img{
+.sliderOuter .slide img{
     border-radius: 10px;
 }
 
-#slider{
-    width: 720px;
+.sliderOuter{
+    width: 6000px;
     height: 400px;
     overflow: hidden;
 }
 
-#slider .slides{
+.sliderOuter .sliderInner{
     display: block;
     width: 6000px;
     height: 400px;
@@ -181,26 +141,18 @@ button, input[type=submit]{
     padding: 0;
 }
 
-/* #slider .slides .eventItem{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .eventItem img{
-    border-radius: 10px;
-}
-
-.eventItem span{
-    margin: 10px;
-} */
-
-#slider .slide{
+.sliderOuter .slide{
     float: left;
     list-style-type: none;
     width: 720px;
     height: 400px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Menu Page */
