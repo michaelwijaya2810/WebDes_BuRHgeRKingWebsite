@@ -168,86 +168,28 @@ button, input[type=submit]{
 }
 
 /* Menu Page */
-/* .menuTitle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.menuTitle span{
-    color: orange;
-    font-size: 24pt;
-    font-weight: 600;
-}
-
-.menuBurger{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 25px 25px;
-    margin-bottom: 75px;
-}
-
-.menuBurger .menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14pt;
-    margin: 15px;
-    width: 30%;
-}
-
-.menuBurger .menu span{
-    text-align: center;
-}
-
-.menuBurger a img{
-    width: 50%;
-    height: auto;
-    align-self: center;
-} */
-
-/* Order Page */
-/* .orderContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.orderForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 100px 25px;
-}
-
-.orderForm input{
-    width: 100%;
-    padding: 10px;
-    margin: 5px;
-} */
 
 /* Coming Soon Page */
 .comingSoonContainer{
     display: flex;
     flex-direction: column;
-    /* background: rgb(201, 130, 0); */
-    color: black;
+    /* background-color: black !important; */
+    padding: 20px 0px;
 }
 
-.comingSoonContainer .comingSoonVideo{
+.comingSoonImg{
     display: flex;
-    background-color: black !important;
-    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 15px 0px;
+}
+
+.comingSoonImg img{
+    width: 60%;
+    height: auto;
 }
 
 .comingSoonText{
@@ -409,7 +351,7 @@ button, input[type=submit]{
         font-size: 10pt;
     } */
 
-    .comingSoonContainer .comingSoonVideo{
+    /* .comingSoonContainer .comingSoonVideo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -432,7 +374,7 @@ button, input[type=submit]{
         font-size: 10pt;  
         margin: 40px 40px;
         padding: 0;
-    }
+    } */
 
     /* .aboutUsTitle{
         text-align: center;
