@@ -168,6 +168,73 @@ button, input[type=submit]{
 }
 
 /* Menu Page */
+.menuTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.menuTitle span{
+    color: orange;
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+.menuBurger{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 25px 25px;
+    margin-bottom: 75px;
+}
+
+.menuBurger .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14pt;
+    margin: 15px;
+    width: 30%;
+}
+
+.menuBurger .menu span{
+    text-align: center;
+}
+
+.menuBurger a img{
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+/* Order Page */
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 25px;
+}
+
+.orderForm input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
 
 /* Coming Soon Page */
 .comingSoonContainer{
@@ -224,7 +291,7 @@ button, input[type=submit]{
 }
 
 /* Abous Us Page */
-/* .aboutUsTitle{
+.aboutUsTitle{
     text-align: center;
     font-size: 24pt;
     margin-top: 40px;
@@ -268,13 +335,13 @@ button, input[type=submit]{
 .brandFooterImage{
     width: 10%;
     height: auto;
-} */
+} 
 
-/* @media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
     .menuBurger .menu{
         font-size: 12pt;
     }
-} */
+}
 
 @media screen and (max-width: 420px) {
     video{
@@ -314,7 +381,7 @@ button, input[type=submit]{
         margin: 20px 0px;
     }
 
-    /* .menuBurger .menu{
+    .menuBurger .menu{
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -349,9 +416,9 @@ button, input[type=submit]{
 
     .orderForm label{
         font-size: 10pt;
-    } */
+    } 
 
-    /* .comingSoonContainer .comingSoonVideo{
+    .comingSoonContainer .comingSoonVideo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -374,9 +441,9 @@ button, input[type=submit]{
         font-size: 10pt;  
         margin: 40px 40px;
         padding: 0;
-    } */
+    } 
 
-    /* .aboutUsTitle{
+    .aboutUsTitle{
         text-align: center;
         font-size: 18pt;
         margin-top: 40px;
@@ -396,7 +463,7 @@ button, input[type=submit]{
     .brandFooterImage{
         width: 30%;
         height: auto;
-    } */
+    }
 
     .footer{
         font-size: 8pt;
