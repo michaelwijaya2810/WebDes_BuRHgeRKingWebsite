@@ -55,6 +55,10 @@ function orderValidation()
   {
     alert("please input address")
   }
+  else if(document.order.email.value.length == 0)
+  {
+    alert("please input email")
+  }
   else
   {
     alert("order success");
