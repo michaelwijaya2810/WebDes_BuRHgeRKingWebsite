@@ -418,14 +418,6 @@ button, input[type=submit]{
         width: 100%;
     }
 
-    .promotions, .news{
-        flex-direction: column;
-    }
-    
-    .promotions div, .news div{
-        margin: 20px 0px;
-    }
-
     .menuBurger .menu{
         display: flex;
         flex-direction: column;
@@ -463,7 +455,7 @@ button, input[type=submit]{
         font-size: 10pt;
     } 
 
-    .comingSoonContainer .comingSoonImg{
+    .comingSoonContainer .comingSoonVideo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
